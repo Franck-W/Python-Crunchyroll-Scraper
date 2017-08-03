@@ -7,6 +7,7 @@ from modules.workreturn import *
 from modules.parse import *
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
+dumpVariablesOnExit = False
 enableMySQL = False
 outFolder = "dump"
 toFolder = False
@@ -311,12 +312,20 @@ if extract != "None":
             f = open("parser.out", 'w', encoding="utf-8")
             f.write(extract + ": \r\n" + str(toExtract) + "\r\n")
             f.close()  # you can omit in most cases as the destructor will call it
+            if dumpVariablesOnExit:
+                f = open("variableDump.txt", 'w', encoding="utf-8")
+                f.write(str(list(zip(show_group_ids, show_titles, show_video_count, show_urls, show_imgs))) + "\r\n")
+                f.close()  # you can omit in most cases as the destructor will call it
             sys.exit(0);
     else:
         if extract != "None" and stringD == "":
             print("No string was specified. Please do so using: 'main.py -e %s -s or --string <string>'" % extract)
             errors += 1
             errorEncountered = True
+            if dumpVariablesOnExit:
+                f = open("variableDump.txt", 'w', encoding="utf-8")
+                f.write(str(list(zip(show_group_ids, show_titles, show_video_count, show_urls, show_imgs))) + "\r\n")
+                f.close()  # you can omit in most cases as the destructor will call it
             sys.exit(2)
         else:
             i = stringD
@@ -473,6 +482,10 @@ if extract != "None":
             f.write(extract + ": \r\n" + str(toExtract) + "\r\n")
             f.close()  # you can omit in most cases as the destructor will call it
             print(MAGENTA + "EXIT" + WHITE + " Task Complete.")
+            if dumpVariablesOnExit:
+                f = open("variableDump.txt", 'w', encoding="utf-8")
+                f.write(str(list(zip(show_group_ids, show_titles, show_video_count, show_urls, show_imgs))) + "\r\n")
+                f.close()  # you can omit in most cases as the destructor will call it
             sys.exit(0);
 # for key in showsA:
 work.returnCode = "SUCCESS"
@@ -702,6 +715,10 @@ if extract != "None":
         else:
             if extract != "None" and stringD == "":
                 print("No string was specified. Please do so using: 'main.py -e %s -s or --string <string>'" % extract)
+                if dumpVariablesOnExit:
+                    f = open("variableDump.txt", 'w', encoding="utf-8")
+                    f.write(str(list(zip(show_group_ids, show_titles, show_video_count, show_urls, show_imgs))) + "\r\n")
+                    f.close()  # you can omit in most cases as the destructor will call it
                 sys.exit(2)
             else:
                 i = stringD
@@ -752,8 +769,6 @@ if extract != "None":
                             errors += 1
                             errorEncountered = True
                     for ex in extractIndexes:
-                        print(ex, len(media_titles))
-                        exit()
                         toExtract.append(media_titles[ex])
 
                 elif extract.split(":")[0] == "url":
