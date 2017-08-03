@@ -63,7 +63,8 @@ episode:serie:
 * ***episode:all:serie*** - Will collect episode count of ALL series on [CrunchyRoll](http://www.crunchyroll.com "Crunchyroll Website")(R).
 
 
-I'm too lazy to add descriptions to the rest. But you probably get it by now anyways.
+***I'm too lazy to add descriptions to the rest. But you probably get it by now anyways.***
+
 **Media:**
 * ***title:media***
 * ***title:all:media***
@@ -77,3 +78,8 @@ I'm too lazy to add descriptions to the rest. But you probably get it by now any
 * ***description:all:media***
 * ***episode:media***
 * ***episode:all:media***
+
+## A plead of help
+Please, if you are an experienced python coder I would LOVE for you to help me clean this code up. It's a massive f***-fest of uselessness but it works for now :/ 
+
+Not really efficiently. But it works.
