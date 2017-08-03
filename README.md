@@ -80,6 +80,6 @@ episode:serie:
 * ***episode:all:media***
 
 ## A plead of help
-Please, if you are an experienced python coder I would LOVE for you to help me clean this code up. It's a massive f***-fest of uselessness but it works for now :/ 
+Please, if you are an experienced python coder I would LOVE for you to help me clean this code up. It's a massive f***-fest of uselessness:/ 
 
-Not really efficiently. But it works.
+It's not really efficient, but heyy! Atleast it works. (Sorta, any '*:media' doesn't..)
