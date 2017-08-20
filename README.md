@@ -35,28 +35,28 @@ title:serie:
 ['Bleach']***
 
 * ***title:all:serie*** - Will collect ALL titles of ALL series on [CrunchyRoll](http://www.crunchyroll.com "Crunchyroll Website")(R).
-* ***id:serie*** - Allows you to search for the title linked to a searchstring you specify using **'-s'** or **'--string'** E.g **'python main.py -e title:serie --string Bleach'** will give the following result:
+* ***id:serie*** - Allows you to search for the id linked to a searchstring you specify using **'-s'** or **'--string'** E.g **'python main.py -e id:serie --string Bleach'** will give the following result:
 ***Result:
 id:serie:
 ['42854']***
 
 * ***id:all:serie*** - Will collect ALL group_id's of ALL series on [CrunchyRoll](http://www.crunchyroll.com "Crunchyroll Website")(R).
-* ***url:serie*** - Allows you to search for the title linked to a searchstring you specify using **'-s'** or **'--string'** E.g **'python main.py -e url:serie --string Bleach'** will give the following result:
+* ***url:serie*** - Allows you to search for the url linked to a searchstring you specify using **'-s'** or **'--string'** E.g **'python main.py -e url:serie --string Bleach'** will give the following result:
 ***Result:
 url:serie:
 ['http://www.crunchyroll.com/bleach']***
 * ***url:all:serie*** - Will collect ALL urls of ALL series on [CrunchyRoll](http://www.crunchyroll.com "Crunchyroll Website")(R).
-* ***img:serie*** - Allows you to search for the title linked to a searchstring you specify using **'-s'** or **'--string'** E.g **'python main.py -e img:serie --string Bleach'** will give the following result:
+* ***img:serie*** - Allows you to search for the image linked to a searchstring you specify using **'-s'** or **'--string'** E.g **'python main.py -e img:serie --string Bleach'** will give the following result:
 ***Result:
 img:serie:
 [['http://img1.ak.crunchyroll.com/i/spire2/52edb7a843abacb4ff0f642c8eda14401325114125_thumb.jpg']](http://img1.ak.crunchyroll.com/i/spire2/52edb7a843abacb4ff0f642c8eda14401325114125_thumb.jpg "Bleach Cover Image")***
 * ***img:all:serie*** - Will collect ALL images of ALL series on [CrunchyRoll](http://www.crunchyroll.com "Crunchyroll Website")(R).
-* ***description:serie*** - Allows you to search for the title linked to a searchstring you specify using **'-s'** or **'--string'** E.g **'python main.py -e description:serie --string Bleach'** will give the following result:
+* ***description:serie*** - Allows you to search for the description linked to a searchstring you specify using **'-s'** or **'--string'** E.g **'python main.py -e description:serie --string Bleach'** will give the following result:
 ***Result:
 description:serie:
 ['BLEACH follows the story of Ichigo Kurosaki. When Ichigo meets Rukia he finds his life is changed forever.']***
 * **description:all:serie** - Will collect ALL descriptions of ALL series on [CrunchyRoll](http://www.crunchyroll.com "Crunchyroll Website")(R).
-* ***episode:serie*** - Allows you to search for the title linked to a searchstring you specify using **'-s'** or **'--string'** E.g **'python main.py -e episode:serie --string Bleach'** will give the following result:
+* ***episode:serie*** - Allows you to search for the total episodes linked to a searchstring you specify using **'-s'** or **'--string'** E.g **'python main.py -e episode:serie --string Bleach'** will give the following result:
 ***Result:
 episode:serie:
 ['366']***
