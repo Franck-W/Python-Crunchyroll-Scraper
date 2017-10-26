@@ -1,7 +1,6 @@
 import sys, time, os, getopt
 import logging
 import numpy as np
-import pymysql
 from modules.colors import *
 from modules.workreturn import *
 from urllib.request import urlopen
